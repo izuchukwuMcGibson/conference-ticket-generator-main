@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test File Upload</title>
+  <style>
+    .custom-file-upload {
+      display: inline-block;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border: 2px dashed #ccc;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    #file-input {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Label that triggers file input -->
+  <label for="file-input" class="custom-file-upload">
+    <img src="https://via.placeholder.com/50" alt="">
+    <p>Click to upload an image</p>
+  </label>
+
+  <!-- Hidden file input -->
+  <input type="file" id="file-input" name="image" accept="image/*">
+
+  <script>
+    const fileInput = document.getElementById("file-input");
+
+    fileInput.addEventListener("change", function () {
+      alert("File selected: " + (fileInput.files[0]?.name || "none"));
+    });
+  </script>
+</body>
+</html>

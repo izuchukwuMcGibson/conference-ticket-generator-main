@@ -1,0 +1,108 @@
+
+html, body{
+    height: 100%;
+}
+@font-face{
+    font-family: 'incosolata';
+    src: url(assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+body{
+    background-image:  url('assets/images/pattern-lines.svg'),url("assets/images/background-desktop.png");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center,center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: incosolata, sans-serif;
+    position: relative;
+}
+ body::before{
+  position: absolute;
+  background-image: url(assets/images/pattern-squiggly-line-bottom-desktop.svg);
+  content: '';
+  bottom: 0;
+  z-index: 1;
+ }
+.heading img{
+    margin-top: 20px;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.heading h1{
+    font-size: 30px;
+}
+.heading h2{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 2px;
+}
+.custom-file-upload{
+    margin: 3px;
+}
+#file-upload-box {
+    width: 300px;                
+    max-width: 400px;        
+    height: 100px;              
+    border: 2px dotted white; 
+    border-radius: 10px;        
+    display: flex;              
+    align-items: center;        
+    justify-content: center;    
+    text-align: center;         
+    color: white;             
+    font-size: 16px;            
+    background-color: transparent; 
+    cursor: pointer;            
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+#file-upload-box:hover {
+    background-color:  rgba(255, 255, 255, 0.2);
+    color: white;               
+}
+ .input-box{
+    border: 2px solid white ;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: white;
+    margin: 3px;
+    width: 300px;
+ }
+ input[type= "file"]{
+    display: none;
+ }
+ #file-upload-box, .input-box {
+    width: 300px;               
+    box-sizing: border-box;     
+}
+.form-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-section p {
+    font-size: 10px;
+    font-weight: lighter;
+}
+.form-section button{
+
+    background-color:  hsl(7, 88%, 67% );
+    margin: 8px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 300px;
+    font-family: incosolata;
+    transition: background-color 0.3s ease, color 0.3s ease ;
+}
+button:hover{
+    background-color:  hsl(7, 71%, 40%);
+}
