@@ -1,5 +1,5 @@
 📇 Conference Ticket Generator
-A simple web-based application for generating printable conference tickets. Built using HTML and designed to help event organizers quickly generate and preview ticket details.
+A simple web-based application for generating printable conference tickets. Built using HTML,CSS and JS and designed to help event organizers quickly generate and preview ticket details.
 
 🚀 Features
 🎟️ Generate customized conference tickets
