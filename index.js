@@ -46,6 +46,6 @@ if (nameElements && emailElements&& imageDisplay) {
         el.textContent = email;
     });
 
-      imageDisplay.src = image || ""
+      imageDisplay.src = image ||  ""
 
 }
